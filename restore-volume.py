@@ -51,6 +51,6 @@ while True:
     if vol.state == 'available':     
         ec2_resource.Instance(instance_id).attach_volume(
             VolumeId=new_volume['VolumeId'],
-            Device='/dev/xvda'
+            Device='/dev/xvdb'
         )
         break
